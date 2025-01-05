@@ -1,6 +1,8 @@
 #  Data Structures and Algorithm
 
-always remember data structure and algorithm are both connected
+always remember data structure and algorithm are both connected <br />
+All the Code in here is in **Python**  <br />
+and i have separate repo on [Python](https://github.com/makstyle119/python) as well if you don't understand this 
 
 **Q1- what is Data Structure ?** <br />
 **A1-** Structure of the Data, can be anything, most commonly use are:
@@ -71,3 +73,53 @@ always remember data structure and algorithm are both connected
 **Q11- what is insertion sort ?** <br />
 **A11-** insertion sort - imagine you have a list as 6, 5, 3, 1, 8, 7, 2, 4. so in insertion sorting you will take first value and check before it nothing so you put it there, now move to second number and you see, 5 is less then 6 so you move 5 before 6, next move to third number and see 3 is less then 6 and again less then 5 as well, so you move 3 in the top and repeat the process for each number.
 - time complexity: **O(n^2)**
+
+**Q12- What is an Object ?** <br/>
+**A12-** any real world thing can be a **object**. in depth, imagine you have a car and your car have few properties and method. like color is a property and your car color is blue and start is a method which will start the car. so you can write it something like this
+```
+car_color = 'Blue'
+def car_start():
+    print('Start the car...')
+```
+and now If you bought another car you maybe handle this like this (let's make first car as car1)
+```
+car1_color = 'Blue'
+def car1_start():
+    print('Start the car...')
+
+car2_color = 'Black'
+def car2_start():
+    print('Start the car...')
+```
+here you can see both car have same values and same function(method) so either creating a separate variable for each we can just create an object  group all car property together
+```
+car1 = {
+    color: 'Blue'
+    def start():
+        print('Start the car...')
+}
+car2 = {
+    color: 'Blue'
+    def start():
+        print('Start the car...')
+}
+```
+here you can see everything about the car wrap inside the **object** (which make it easy to manage)
+
+**Q13- What is a Class ?** <br/>
+**A13-** **Class** is a blue print of an **object**. (let's continue last example) you have 5 cars now so you have to create 5 **object** and write all code again and again. and it's not efficient so what we do we create a **class** and then create **object** from this class (the benefit is we don't have to write start method every time and provide the color and that's all)
+```
+class Car:
+    __init__(self, color):
+        self.color = color
+    
+    def start(self):
+        print('Start the car...')
+
+car1 = Car('blue')
+car2 = Car('black')
+car3 = Car('white')
+car4 = Car('black')
+car5 = Car('white')
+```
+here you can see all we create 5 cars and only provide color variable and start will be inheritance to all those cars and look how simple and clean it become
