@@ -4,6 +4,15 @@ always remember data structure and algorithm are both connected <br />
 All the Code in here is in **Python**  <br />
 and i have separate repo on [Python](https://github.com/makstyle119/python) as well if you don't understand this 
 
+## Folder Structure:
+
+```
+📂 code
+├── 📂 001
+|   ├── 📄 oops.py
+└── 📄 README.md
+```
+
 **Q1- what is Data Structure ?** <br />
 **A1-** Structure of the Data, can be anything, most commonly use are:
 - **string** ( any character )
