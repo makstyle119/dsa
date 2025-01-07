@@ -132,3 +132,30 @@ car4 = Car('black')
 car5 = Car('white')
 ```
 here you can see all we create 5 cars and only provide color variable and start will be inheritance to all those cars and look how simple and clean it become
+
+**Q14- What is public, protected, and private in Classes ?** <br />
+**A14-** Well in a Class there are 3 kind of things
+- **public:**
+    anyone can access it
+- **private**
+    no one can access it
+- **protected**
+    only those who inherit from you
+
+**Q15- What is Inheritance ?** <br />
+**A15- Inheritance** is as it's work in real life, if you inherit from someone you get there things, same for programming
+- public attribute will be inherit
+- private attribute will not inherit
+- protected attribute will inherit as well
+
+**Q16- What is Polymorphism ?** <br />
+**A16-** In short if you can treat different classes as one super class (after inheritance) its' **Polymorphism**. few **Polymorphism** are:
+- overloading
+- overwriting
+
+**Q17- What is Encapsulation ?** <br />
+**A17- Encapsulation** is restricting direct access to the properties (from outside use) - common example is `getter` and `setter`. 
+
+## keywords
+- ***Base Class:** class use to inherit (dog inherit from animal so animal is base class)*
+- ***Derive Class:** class which inherit from base class (dog inherit from animal so dog is derive class)*
