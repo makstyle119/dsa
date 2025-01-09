@@ -1,5 +1,42 @@
 from enum import Enum  # Import Enum for creating enumerations
 
+# Base class representing a security device
+class Security_Device:
+    def __init__(self, active):
+        # Initializes the Security_Device object with an active status
+        self.active = active
+    
+    def reset(self):
+        # Resets the security device to the active state
+        self.active = True
+
+# Subclass representing a sensor that inherits from Security_Device
+class Sensor(Security_Device):
+    def __init__(self, silent, distance):
+        # Since this class is inheriting, we need to call the parent constructor explicitly if we use new attributes
+        super().__init__(True)  # Call the parent class constructor with a default active state
+        self.silent = silent  # Whether the sensor is silent
+        self.distance = distance  # The range of the sensor
+
+# Create an instance of Security_Device
+security_device = Security_Device(True)
+
+# Create an instance of Sensor
+sensor = Sensor(True, 10)
+
+# Call the reset method from the parent class to reset the sensor's active state
+sensor.reset()
+print(sensor.active)  # Print the active state of the sensor
+
+# Print the type of the sensor object
+print(type(sensor))
+
+# Check if the sensor object is an instance of the Security_Device class
+print(isinstance(sensor, Security_Device))
+
+# Check if the Sensor class is a subclass of Security_Device
+print(issubclass(Sensor, Security_Device))
+
 # Class representing a camera's position with pan, tilt, and zoom attributes
 class Position:
     def __init__(self, pan, tilt, zoom):
@@ -13,7 +50,7 @@ class Position:
         print(f"Pan: {self.pan}, Tilt: {self.tilt}, Zoom: {self.zoom}")
 
 # Class representing a camera with a serial number, position, and type
-class Camera:
+class Camera (Security_Device):
     def __init__(self, serial_number, position, camera_type):
         # The __init__ method initializes the Camera object with specific attributes
         self.serial_number = serial_number  # Unique identifier for the camera
