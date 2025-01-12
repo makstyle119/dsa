@@ -21,7 +21,7 @@ and i have separate repo on [Python](https://github.com/makstyle119/python) as w
 - **null** ( kinda hard to explain - let's say value is nothing - type is specified - not true in some cases )
 - **undefined** ( same as null but value is not been removed or never specified )
 - **object** ( combination of other data types )
-- **array** ( list of other data types )
+- **array** ( list of data together - different type of data can be in one array )
 
 **Q2- what is algorithm ?** <br />
 **A2-** Algorithm is in simple a step to do anything, like a recipe to cake, but what it do with data so in this situation we can say algorithm is the way to step of code you write to achieve the business logic.
@@ -156,6 +156,27 @@ here you can see all we create 5 cars and only provide color variable and start 
 **Q17- What is Encapsulation ?** <br />
 **A17- Encapsulation** is restricting direct access to the properties (from outside use) - common example is `getter` and `setter`. 
 
+**Q18- What is array ?** <br />
+**A18- Array** collection of data together in one.
+there are 2 types of **Array**:
+1. **Static Array:** 
+    - **static array** will have fix size (in the memory)
+2. **Dynamic Array:**
+    - **Dynamic Array** you don't need to worry about array size because there is no limitation.
+
+**Q19- What is a linked Lists?** <br />
+**A19- linked Lists** is something, let's say you have a note (variable) and this note have 2 this first the value and second is a pointer which will point to the second note and this process will go and this is what a linked list look like.
+- the problem is you only know next value so if you want to go to x element you have to go through each element
+- work fine if you work one by one
+- work exactly like array
+    - add element
+    - remove element
+
+## Tips 
+- *Always use dynamic array over static array (if possible)*
+
 ## keywords
 - ***Base Class:** class use to inherit (dog inherit from animal so animal is base class)*
 - ***Derive Class:** class which inherit from base class (dog inherit from animal so dog is derive class)*
+- ***Logical Length:** how much element present in an array*
+- ***Physical Length:** total length of the array*
