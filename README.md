@@ -167,6 +167,8 @@ there are 2 types of **Array**:
 **Q19- What is a linked Lists?** <br />
 **A19- linked Lists** is something, let's say you have a note (variable) and this note have 2 this first the value and second is a pointer which will point to the second note and this process will go and this is what a linked list look like.
 - the problem is you only know next value so if you want to go to x element you have to go through each element
+- if size increase it will become so slow to retrieve data
+- easy to insert data (just figure out the position where you want to add and then add the value)
 - work fine if you work one by one
 - work exactly like array
     - add element
