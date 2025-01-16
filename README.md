@@ -164,7 +164,7 @@ there are 2 types of **Array**:
 2. **Dynamic Array:**
     - **Dynamic Array** you don't need to worry about array size because there is no limitation.
 
-**Q19- What is a linked Lists?** <br />
+**Q19- What is a linked Lists ?** <br />
 **A19- linked Lists** is something, let's say you have a note (variable) and this note have 2 this first the value and second is a pointer which will point to the second note and this process will go and this is what a linked list look like.
 - the problem is you only know next value so if you want to go to x element you have to go through each element
 - if size increase it will become so slow to retrieve data
@@ -173,6 +173,15 @@ there are 2 types of **Array**:
 - work exactly like array
     - add element
     - remove element
+
+**Q20- What is Stack ?** <br />
+**A20- Stack** is simply think that you have 3 book and you put them top of one to another, and your friend give you another book so now you have 4 book and you put fourth book top of 3 and when your friend asked for a book you grab the top one and give it to the friend, yes this is all, the concept of first in and first out.
+- We have 2 method in **stack**
+    - `pop()` = to remove the last one
+    - `push()` = to add in the last
+- **stack** work with collection so **array** or **linked list**
+- also know as **abstract data** type
+- some type we have `peek` method to look what element we have in the last
 
 ## Tips 
 - *Always use dynamic array over static array (if possible)*
