@@ -182,6 +182,26 @@ there are 2 types of **Array**:
 - **stack** work with collection so **array** or **linked list**
 - also know as **abstract data** type
 - some type we have `peek` method to look what element we have in the last
+- **stack** also know as **LIFO**
+    - L = last
+    - I = in
+    - F = first
+    - O = out
+    - last in first out
+
+**Q21- What is Queue ?** <br />
+**A21- Queue** is same as queue the only different is first value will extract first out. 
+- We have 2 method in **queue**
+    - `enqueue()` = to add
+    - `dequeue()` = to remove
+- also know as **buffer**
+- also know as **abstract data** type
+- **queue** also know as **FIFO**
+    - F = first
+    - I = in
+    - F = first
+    - O = out
+    - fist in first out
 
 ## Tips 
 - *Always use dynamic array over static array (if possible)*

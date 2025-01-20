@@ -10,6 +10,10 @@ always remember data structure and algorithm are both connected
 |   ├── 📄 oops.py
 ├── 📂 002
 |   ├── 📄 linked_list.py
+├── 📂 003
+|   ├── 📄 stack.py
+├── 📂 004
+|   ├── 📄 queue.py
 └── 📄 README.md
 ```
 
@@ -165,5 +169,15 @@ data = [] # empty list
 data.append(5) # push 5 - add 5 to the top
 print(data[len(data) - 1]) # 5 - peel the top element
 element = data.pop() # pop 5 - remove the top element
+print(element) # 5 - print the removed element
+```
+
+- code/004/queue.py
+```python
+# Description: queue implementation using list
+data = [] # empty list
+data.append(5) # enqueue 5 - add 5 to the rear
+print(data[0]) # 5 - peek the front element
+element = data.pop(0) # dequeue 5 - remove the front element
 print(element) # 5 - print the removed element
 ```
