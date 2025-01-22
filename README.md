@@ -203,6 +203,22 @@ there are 2 types of **Array**:
     - O = out
     - fist in first out
 
+**Q22- What is Hash Table ?** <br />
+**A22- Hash Table** is just like an array with key value pair (you can understand it as an object), also know as lookup table where you look the value with the id/key
+- **Props:**
+    - it's an **O(1)** operation so it's extremely fast
+- **Cons:**
+    - no duplicate key in **Hash Table** (technically not a cons but i didn't find anything else)
+- **Explain:**
+    - when we create a hash table it will give us an array of certain size. and when you assign a key value pain in an hash table it will assign somewhere in the assign table (and this place where we assign the key-value will determine by hashing - hashing algorithm - hash function - ofter use mod - %)
+- **Collisions:**
+    - let's say you use the hash function and set value of index 4 and then with second value it will again get 4 so here you can do 5 things
+    1. **Separate Chaining:**
+        - either send to next row
+        - if this happen a lot it will convert O(1) to linked list O(n) and effect the fast track of hash table
+    2. **Linear Probing:**
+        - convert existing into linked list and point the value of current to next value
+
 ## Tips 
 - *Always use dynamic array over static array (if possible)*
 

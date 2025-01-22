@@ -14,6 +14,8 @@ always remember data structure and algorithm are both connected
 |   ├── 📄 stack.py
 ├── 📂 004
 |   ├── 📄 queue.py
+├── 📂 005
+|   ├── 📄 hashTable.py
 └── 📄 README.md
 ```
 
@@ -213,4 +215,20 @@ data2.append(5) # enqueue 5 - add 5 to the rear
 print(data2[0]) # 5 - peek the front element
 element = data2.popleft() # dequeue 5 - remove the front element
 print(element) # 5 - print the removed element
+```
+
+- code/005/hashTable.py
+```python
+# hash table implementation
+data = {}
+data['a'] = 1 # key-value pair
+data['b'] = 2 
+data['c'] = 3
+print(data) # {'a': 1, 'b': 2, 'c': 3}
+print(data['a']) # 1
+print(data['b'])
+print(data['c'])
+print(data.keys()) # dict_keys(['a', 'b', 'c']) - dict_keys is a view object
+print(data.values()) # dict_values([1, 2, 3]) - dict_values is a view object
+print(data.items()) # dict_items([('a', 1), ('b', 2), ('c', 3)]) - dict_items is a view object
 ```
