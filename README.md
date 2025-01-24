@@ -7,9 +7,20 @@ and i have separate repo on [Python](https://github.com/makstyle119/python) as w
 ## Folder Structure:
 
 ```
-📂 code
-├── 📂 001
-|   ├── 📄 oops.py
+├── 📂 code
+├   ├── 📂 001
+├   |   ├── 📄 oops.py
+├   ├── 📂 002
+├   |   ├── 📄 linked_list.py
+├   ├── 📂 003
+├   |   ├── 📄 stack.py
+├   ├── 📂 004
+├   |   ├── 📄 queue.py
+├   ├── 📂 005
+├   |   ├── 📄 hashTable.py
+├   ├── 📂 006
+├   |   ├── 📄 sets.py
+├   └── 📄 README.md
 └── 📄 README.md
 ```
 
@@ -218,6 +229,27 @@ there are 2 types of **Array**:
         - if this happen a lot it will convert O(1) to linked list O(n) and effect the fast track of hash table
     2. **Linear Probing:**
         - convert existing into linked list and point the value of current to next value
+
+**Q23- What are Sets ?** <br />
+**A23- Sets** are just like list/array in simple
+- few more things:
+    - no duplicate
+    - no order
+    - no count
+    - and use to check if the value/thing is available or not or get the value
+- we can do few method with sets:
+    - add
+    - remove
+    - clear
+    - union = combine 2 sets
+    - intersection = return same values from both sets
+    - difference = return different value present in first set
+    - symmetric difference = return different value present in both sets
+    - frozenset are immutable set you can't change them
+- **Explain:**
+    sets work in same way as hash they hash the complete value then store them in a list in memory and the reason you can't save any value more then one is that if you hash same value twice it will give you same response and there will be no way to know to put it as first or second value and yes sets don't deal with collisions 
+    - don't put anything in hash which is not hashable
+    - you can even write your own hash method for set (which vert language to language)
 
 ## Tips 
 - *Always use dynamic array over static array (if possible)*
