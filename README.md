@@ -220,6 +220,7 @@ there are 2 types of **Array**:
     - it's an **O(1)** operation so it's extremely fast
 - **Cons:**
     - no duplicate key in **Hash Table** (technically not a cons but i didn't find anything else)
+    - no orderQ
 - **Explain:**
     - when we create a hash table it will give us an array of certain size. and when you assign a key value pain in an hash table it will assign somewhere in the assign table (and this place where we assign the key-value will determine by hashing - hashing algorithm - hash function - ofter use mod - %)
 - **Collisions:**
@@ -232,12 +233,13 @@ there are 2 types of **Array**:
 
 **Q23- What are Sets ?** <br />
 **A23- Sets** are just like list/array in simple
-- few more things:
+- **Props:**
     - no duplicate
+    - check if the value/thing is available or not or get the value
+- **Cons:**
     - no order
     - no count
-    - and use to check if the value/thing is available or not or get the value
-- we can do few method with sets:
+- **Method:**
     - add
     - remove
     - clear
