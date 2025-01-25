@@ -261,3 +261,7 @@ there are 2 types of **Array**:
 - ***Derive Class:** class which inherit from base class (dog inherit from animal so dog is derive class)*
 - ***Logical Length:** how much element present in an array*
 - ***Physical Length:** total length of the array*
+
+## Resources
+I start my journey using this cool stuff so shout to them:
+- <a href="https://www.youtube.com/playlist?list=PL_c9BZzLwBRLpDEpYRFXKBN-2ZCsAx0ps" target="_blank">Data Structures and Algorithms by Caleb Curry</a>
